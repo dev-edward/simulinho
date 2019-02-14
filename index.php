@@ -5,6 +5,7 @@
 	<link href="css/estilo.css" rel="stylesheet">
 </head>
 <body>
+<!--teste-->
 	<!--div lateral onde ficam as informações do usuário e os botões-->
 	<div class="lateral">
 		<div class="usuario">
