@@ -4,9 +4,9 @@
  * para que funcione mude o usuário e senha do seu banco de dados na linha 7 e 8
  */
 $servidor='localhost';
-$usuario='seuusuarioaqui';
-$senha='suasenhaaqui';
-$banco='sim';
+$usuario='root';
+$senha='';
+$banco='simulinho';
 $conexao = new mysqli($servidor, $usuario, $senha, $banco);
 if ($conexao->connect_error) {
     die("Connection failed: " . $conexao->connect_error);

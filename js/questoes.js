@@ -36,14 +36,15 @@ function radiobutons(){
  *função para o botão proximo
  */	
 var texto;
+var btnProximo = "<br><a href='questoes.php'>Próxima questao &#x25B6;</a>"
 function proximo(){
 	if(alternativaescolhida == alternativacorreta){
-		document.getElementById("resultado").style.color = "#0f0";
-		texto = "Acertou";
+		document.getElementById("resultado").style.backgroundColor = "#0F8B8D";
+		texto = "Acertou<br> +20 <img  class='iconeN' src='img/coin.png'> <br> +3 <img  class='iconeN' src='img/medalha.png'>"+btnProximo;
 	}else{
-		document.getElementById("resultado").style.color = "#f00";
-		texto = "Errou";
+		document.getElementById("resultado").style.backgroundColor = "#D1462F";
+		texto = "Errou <br> Alternativa correta: <br> "+alternativacorreta+btnProximo;
 	}
-	document.getElementById('resultado').innerHTML += texto;
+	document.getElementById('resultado').innerHTML = texto;
 	document.getElementById("resultado").style.display = "block";
 }

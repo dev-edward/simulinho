@@ -1,37 +1,127 @@
+<?php 
+	session_start();
+	if(!session_status() == PHP_SESSION_ACTIVE){
+		header('location:index.php');
+	}
+?>
 <html>
 <head>
 	<title>Informações</title>
 	<meta charset="utf-8" />
-	<link href="css/estilo.css" rel="stylesheet">
+	<link href="css/principal.css" rel="stylesheet">
+	<link href="css/lateral.css" rel="stylesheet">
+	<link href="css/informacoes.css" rel="stylesheet">
 </head>
 <body>
-	<!--div lateral onde ficam as informações do usuário e os botões-->
-	<div class="lateral">
-		<div class="usuario">
-			<div id="personagem">
-				<img src="img/jake.png" alt="personagem">
-			</div>
-			<div id="info">
-				<span class="nickname">Usuario.123</span><br>
-				<span>Nivel: Iniciante</span><br>
-				<span>Meta: Desenvolvimento de sistemas</span><br>
-				<span>Unidade: Prof. Aprigio Gonzaga</span><br>
-				<span class="n-moedas"><img  class="moeda" src="img/coin.png">390</span><br>
-				<a class="btn-p" href="personagem.php">Personagem</a>
-				<a class="btn-config" href="configuracao.php"><img src="img/config.png"></a>
-			</div>
-		</div>
-		<div class="botoes">
-			<!--Os botões tem tem uma div vazia do lado porque vira uma 'seta' e fica visível(azul) para indicar que está na mesma página do botão-->
-			<div class="btn"><a href="questoes.php">Questões Aleatórias</a><div></div></div>
-			<div class="btn"><a href="simulado.php">Modo Simulado</a><div></div></div>
-			<div class="btn"><a href="estatisticas.php">Estatísticas</a><div></div></div>
-			<div class="atual"><a href="informacoes.php">Sobre o vestibulinho</a><div></div></div>
-		</div>
-	</div>
-	<!--div onde fica o conteúdo de cada página-->
+	<?php 
+		if(session_status() == PHP_SESSION_ACTIVE){
+			$btnQuestoes ="btn";
+			$btnSimulado ="btn";
+			$btnEstatisticas ="btn";
+			$btnSobre ="atual";
+			$btnRanking ="btn";
+			$btnOndeEstudar ="btn";
+			include_once("lateral.php");
+		}
+	?>
 	<div class="conteudo">
-		Informações sobre o vestibulinho
+		<button class="caixa"> Quando será realizado o Exame do presente Processo Seletivo-Vestibulinho?</button>
+			<div class="resposta">
+				<div> O Exame será realizado no dia 16/06/2019 (domingo), às 13h30min. </div>
+			</div>
+			
+		<button class="caixa"> Quando e como poderei confirmar o local onde realizarei o Exame do Processo Seletivo-Vestibulinho?</button>
+			<div class="resposta">
+				<div></div>
+			</div>
+		<button class="caixa"> Quantas horas terei para realizar a prova do presente Processo Seletivo-Vestibulinho?</button>
+			<div class="resposta">
+				<div>
+				O portão da escola será aberto às 12h30min e fechado às 13h30min, impreterivelmente.
+Após o fechamento do portão, não será permitida a entrada de nenhum candidato. Por esse motivo, o candidato deverá chegar com antecedência de 1 (uma) hora, para localizar sua sala e sua carteira, evitando-se, assim, possíveis imprevistos.
+Após o início do Exame, o candidato deverá permanecer no mínimo até às 15h30min dentro da sala do Exame, podendo, ao deixar este local, levar consigo o caderno de questões.
+				</div>
+			</div>
+		
+		<button class="caixa"> O que devo levar para realizar o Exame do presente Processo Seletivo-Vestibulinho?</button>
+			<div class="resposta">
+				<div></div>
+			</div>
+		<button class="caixa"> Meu documento de identidade está com foto antiga e/ou em más condições de visibilidade. Neste caso como deverei proceder?</button>
+			<div class="resposta">
+				<div></div>
+			</div>
+		<button class="caixa"> Em caso de perda, roubo ou extravio de documento de identidade (RG), como poderei realizar o Exame do presente Processo Seletivo-Vestibulinho?</button>
+			<div class="resposta">
+				<div></div>
+			</div>
+		<button class="caixa"> Como serão as provas do presente Processo Seletivo-Vestibulinho?</button>
+			<div class="resposta">
+				<div></div>
+			</div>
+		<button class="caixa"> Quando e onde serão divulgados os gabaritos oficiais das provas do presente Processo Seletivo-Vestibulinho?</button>
+			<div class="resposta">
+				<div></div>
+			</div>	
+		
+		<button class="caixa"> Como será obtida a nota final de classificação do Processo Seletivo-Vestibulinho?</button>
+			<div class="resposta">
+				<div></div>
+			</div>
+		<button class="caixa"> Quando e onde serão divulgadas as listas de convocação para a prova de aptidão e as listas de classificação geral do Processo Seletivo-Vestibulinho?</button>
+			<div class="resposta">
+				<div></div>
+			</div>
+		<button class="caixa">  Qual a diferença entre "lista de classificação geral" e "lista de convocação"?</button>
+			<div class="resposta">
+				<div></div>
+			</div>
+			
+			
+			
+		<button class="caixa">  Qual a diferença entre "lista de classificação geral" e "lista de convocação"?</button>
+			<div class="resposta">
+				<div></div>
+			</div>
+		<button class="caixa">  Qual a diferença entre "lista de classificação geral" e "lista de convocação"?</button>
+			<div class="resposta">
+				<div></div>
+			</div>
+		<button class="caixa">  Qual a diferença entre "lista de classificação geral" e "lista de convocação"?</button>
+			<div class="resposta">
+				<div></div>
+			</div>
+		<button class="caixa">  Qual a diferença entre "lista de classificação geral" e "lista de convocação"?</button>
+			<div class="resposta">
+				<div></div>
+			</div>			
+		<button class="caixa">  Qual a diferença entre "lista de classificação geral" e "lista de convocação"?</button>
+			<div class="resposta">
+				<div></div>
+			</div>
+		<button class="caixa">  Qual a diferença entre "lista de classificação geral" e "lista de convocação"?</button>
+			<div class="resposta">
+				<div></div>
+			</div>			  
+										
+										
+										
 	</div>
+	<script>
+		var coll = document.getElementsByClassName("caixa");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("aberto");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = "100%";
+				}
+			});
+		}
+	</script>
 </body>
 </html>

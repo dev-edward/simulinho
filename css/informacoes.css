@@ -1,0 +1,30 @@
+.caixa{
+	background-color: #8acffd;
+	color: #016FB9;
+	cursor: pointer;
+	padding: 16px;
+	width: 80%;
+	border:none;
+	outline: none;
+	font-size: 20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.aberto, .caixa:hover {
+	background-color: #016FB9;
+	color: #8acffd;
+}
+.resposta{
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #8acffd;
+	border:solid 1px #016FB9;
+	border-top:none;
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.resposta div{
+	padding:10px;
+}

@@ -1,0 +1,127 @@
+.questao{
+	flex-grow:1;
+	padding:20px 30px;
+	clear:both;
+	height:86%;
+	font-family: 'Arimo', sans-serif;
+	overflow:auto;
+	background-color:#ffffffbb;
+}
+.caixa{
+	padding:8px;
+	border:1px solid #000;
+	border-radius:5px;
+	text-align:justify;
+	box-shadow: 0px 0px 8px #000;
+	margin:5px 0px;
+	background-color:#ffffffaa;
+}
+.titulo{
+	font-weight:bold;
+	text-align:center;
+	display:block;
+}
+.fonte{
+	font-size:70%;
+}
+.alternativas{
+	margin-top:8px;
+}
+.alternativas label:first-child{
+	border-top:none;
+}
+.alternativas label:last-child{
+	border-bottom:none;
+}
+.base{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	width:100%;
+	padding:0px 20px;
+	position:relative;
+	background-color:#ffffff55;
+	border-top:solid 2px #ffffffaa;
+	box-shadow: 2px 0px 10px #fff;
+}
+#resultado{
+    display: none;
+    width: 200;
+    height: 200;
+    position: absolute;
+    text-align: center;
+    bottom: 100%;
+    left: 40%;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+}
+#resultado a{
+	color: #F1D302;
+    position: absolute;
+    bottom: 10px;
+    left: 20;
+    border: 1px solid #F1D302;
+    border-radius: 6px;
+    width: 80%;
+    padding: 2px;
+	cursor:pointer;
+}
+#tempo{
+	font-size:20px;
+}
+#visto{
+	width: 40px;
+    cursor: pointer;
+    font-size: 36px;
+}
+#visto:hover{
+	color: #0F8B8D;
+}
+
+
+input[type="radio"] {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid #333;
+  background-color: #fff;
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+}
+
+input[type="radio"]:focus { 
+  outline-color: transparent;
+}
+
+input[type="radio"]:checked {
+  background-color: #333;
+}
+
+input[type="radio"]:checked ~ span{
+  color: #fff;
+}
+.alternativas label{
+	display:flex;
+	position:relative;
+	border-top:1px solid #aaaaaaaa;
+	border-bottom:1px solid #333333aa;
+	cursor:pointer;
+}
+.letra{
+	padding:5px;
+	width:40px;
+	height:40px;
+}
+.letra span{
+  position: relative;
+  left: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+.letra span{
+  position: relative;
+  top: -24px;
+}  

@@ -1,0 +1,74 @@
+.conteiner {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+.conteiner img {
+    width: 100px;
+}
+
+.titulo {
+    font-size: 50px;
+    border-radius: 30px;
+    background-color: #B0C4DE;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+}
+
+.lista {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #B0C4DE;
+    padding: 10px;
+    height: 520px;
+    overflow: auto;
+}
+
+.usuario2 {
+    display: flex;
+    justify-content: space-between
+}
+
+.usuario2 img {
+    width: 60px;
+    height: 50px;
+}
+
+.mascote{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: fit-content;
+}
+.mascote img {
+    position: relative;
+    height: 250px;
+}
+
+.balaodialogo {
+    width: 200px;
+    height: 100px;
+    border-radius: 15px 15px 15px 0px;
+    background: #5391cc;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.balaodialogo:before {
+    content: "";
+    position: absolute;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid #5391cc;
+    left: -30px;
+    bottom: 0px;
+}
+

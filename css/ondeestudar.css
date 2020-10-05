@@ -1,0 +1,11 @@
+.balao{
+    width: 550px;
+    margin: 20px auto;
+    border-radius: 0px 15px 15px 15px;
+    background: #5391cc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    font-family: 'Righteous', cursive;
+}
